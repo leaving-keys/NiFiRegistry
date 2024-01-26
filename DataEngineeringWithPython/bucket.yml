@@ -1,0 +1,7 @@
+flows:
+  6480618f-a24a-45ff-b7f3-251a9dbe5b69: {ver: 1, file: SeeClickFix.snapshot, comments: '',
+    author: anonymous, created: 1706292885744, flowName: SeeClickFix, flowDesc: 'Query
+      the SeeClickFix API for current and historic issues, then add those issues into
+      Elasticsearch.'}
+layoutVer: 1
+bucketId: 92ee7fbc-7446-4427-a5ef-c12e34db8fb8
