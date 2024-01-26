@@ -82,28 +82,28 @@
           "destination" : {
             "comments" : "",
             "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-            "id" : "576629e2-80df-3f65-bd9d-f7315960bef1",
-            "instanceIdentifier" : "54ef8c5c-68b5-3b91-69bd-4a108761d76e",
-            "name" : "Query SeeClickFix",
+            "id" : "15e327c5-8e78-384c-9bb3-92f6e74d3a94",
+            "instanceIdentifier" : "a495ee81-678c-3ec9-ab48-ba8bb70d6b68",
+            "name" : "Elasticsearch SeeClickFix Warehouse",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-          "identifier" : "78b2da9a-180c-3f1b-b876-af1c2b77e807",
-          "instanceIdentifier" : "32f81556-2467-37ba-5827-b338051758ff",
+          "identifier" : "67ff63ac-dd27-3e86-81fd-7fcf45715223",
+          "instanceIdentifier" : "8b80f268-26d0-340a-4ea9-f0d01de165e8",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
+          "selectedRelationships" : [ "matched" ],
           "source" : {
             "comments" : "",
             "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-            "id" : "5cedd2b6-9dac-3c54-af40-e0016e635690",
-            "instanceIdentifier" : "1eeeba59-24ce-3e2c-ef83-79353cf77022",
-            "name" : "Start Flow Fake Data",
+            "id" : "457239f8-4379-3cb2-9164-878d2bddff31",
+            "instanceIdentifier" : "8d2846c7-2854-333a-e675-018f58d48b39",
+            "name" : "EvaluateJsonPath",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -143,72 +143,6 @@
             "id" : "dd1364d9-05e3-3a03-9dba-c3388b34d55e",
             "instanceIdentifier" : "afc1fe78-22e1-35ea-4b76-b52f398d24e7",
             "name" : "Query Next Page",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-            "id" : "2a28a726-3273-3035-84ac-51e6257adb3b",
-            "instanceIdentifier" : "58916ece-35f0-3af8-d3a6-8123e17ca820",
-            "name" : "AddCoordinates",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-          "identifier" : "25f64de0-de3c-3682-beab-ae0d5c2664cc",
-          "instanceIdentifier" : "294404f8-24d7-378e-f788-aff4f303e5f9",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "split" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-            "id" : "62689ddb-5d7b-3bc2-a4b6-f8b868404cae",
-            "instanceIdentifier" : "5db30777-fb55-31cc-2c9c-d64a2f636bce",
-            "name" : "SplitJson",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-            "id" : "15e327c5-8e78-384c-9bb3-92f6e74d3a94",
-            "instanceIdentifier" : "a495ee81-678c-3ec9-ab48-ba8bb70d6b68",
-            "name" : "Elasticsearch SeeClickFix Warehouse",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-          "identifier" : "67ff63ac-dd27-3e86-81fd-7fcf45715223",
-          "instanceIdentifier" : "8b80f268-26d0-340a-4ea9-f0d01de165e8",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "matched" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-            "id" : "457239f8-4379-3cb2-9164-878d2bddff31",
-            "instanceIdentifier" : "8d2846c7-2854-333a-e675-018f58d48b39",
-            "name" : "EvaluateJsonPath",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -319,6 +253,105 @@
           "destination" : {
             "comments" : "",
             "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+            "id" : "dd1364d9-05e3-3a03-9dba-c3388b34d55e",
+            "instanceIdentifier" : "afc1fe78-22e1-35ea-4b76-b52f398d24e7",
+            "name" : "Query Next Page",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+          "identifier" : "47c4cb72-7d2b-3450-995c-2aa4def61156",
+          "instanceIdentifier" : "79998f1b-fdba-3cd7-72c1-cb088f653136",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+            "id" : "33486bde-0b21-353b-b9fd-8632906d8831",
+            "instanceIdentifier" : "60d3262b-28d6-3aac-b5a3-74c2a961c942",
+            "name" : "Query SeeClickFix Archive",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+            "id" : "2a28a726-3273-3035-84ac-51e6257adb3b",
+            "instanceIdentifier" : "58916ece-35f0-3af8-d3a6-8123e17ca820",
+            "name" : "AddCoordinates",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+          "identifier" : "25f64de0-de3c-3682-beab-ae0d5c2664cc",
+          "instanceIdentifier" : "294404f8-24d7-378e-f788-aff4f303e5f9",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "split" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+            "id" : "62689ddb-5d7b-3bc2-a4b6-f8b868404cae",
+            "instanceIdentifier" : "5db30777-fb55-31cc-2c9c-d64a2f636bce",
+            "name" : "SplitJson",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+            "id" : "576629e2-80df-3f65-bd9d-f7315960bef1",
+            "instanceIdentifier" : "54ef8c5c-68b5-3b91-69bd-4a108761d76e",
+            "name" : "Query SeeClickFix",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+          "identifier" : "78b2da9a-180c-3f1b-b876-af1c2b77e807",
+          "instanceIdentifier" : "32f81556-2467-37ba-5827-b338051758ff",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+            "id" : "5cedd2b6-9dac-3c54-af40-e0016e635690",
+            "instanceIdentifier" : "1eeeba59-24ce-3e2c-ef83-79353cf77022",
+            "name" : "Start Flow Fake Data",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
             "id" : "33486bde-0b21-353b-b9fd-8632906d8831",
             "instanceIdentifier" : "60d3262b-28d6-3aac-b5a3-74c2a961c942",
             "name" : "Query SeeClickFix Archive",
@@ -352,28 +385,28 @@
           "destination" : {
             "comments" : "",
             "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-            "id" : "dd1364d9-05e3-3a03-9dba-c3388b34d55e",
-            "instanceIdentifier" : "afc1fe78-22e1-35ea-4b76-b52f398d24e7",
-            "name" : "Query Next Page",
+            "id" : "c42adba6-fa03-3cd2-a5f0-b427a9b28ee9",
+            "instanceIdentifier" : "46fb61f8-018d-1000-a476-0f0f220cf6e1",
+            "name" : "New Data Warehouse",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-          "identifier" : "47c4cb72-7d2b-3450-995c-2aa4def61156",
-          "instanceIdentifier" : "79998f1b-fdba-3cd7-72c1-cb088f653136",
+          "identifier" : "3077a2ed-3b52-3570-8ead-1d3b1a9587c9",
+          "instanceIdentifier" : "46fb793d-018d-1000-3cc5-2886b4ecfe32",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
+          "selectedRelationships" : [ "matched" ],
           "source" : {
             "comments" : "",
             "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-            "id" : "33486bde-0b21-353b-b9fd-8632906d8831",
-            "instanceIdentifier" : "60d3262b-28d6-3aac-b5a3-74c2a961c942",
-            "name" : "Query SeeClickFix Archive",
+            "id" : "457239f8-4379-3cb2-9164-878d2bddff31",
+            "instanceIdentifier" : "8d2846c7-2854-333a-e675-018f58d48b39",
+            "name" : "EvaluateJsonPath",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -954,6 +987,152 @@
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.script.ExecuteScript",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ "success", "failure", "retry" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-elasticsearch-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.22.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+          "identifier" : "c42adba6-fa03-3cd2-a5f0-b427a9b28ee9",
+          "instanceIdentifier" : "46fb61f8-018d-1000-a476-0f0f220cf6e1",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "New Data Warehouse",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 3344.0,
+            "y" : 384.0
+          },
+          "properties" : {
+            "elasticsearch-http-response-timeout" : "15 secs",
+            "put-es-id-attr" : "id",
+            "put-es-index" : "seeclickfix",
+            "elasticsearch-http-url" : "http://localhost:9200",
+            "put-es-batch-size" : "100",
+            "elasticsearch-http-connect-timeout" : "5 secs",
+            "put-es-index-op" : "upsert",
+            "Character Set" : "UTF-8"
+          },
+          "propertyDescriptors" : {
+            "elasticsearch-http-response-timeout" : {
+              "displayName" : "Response Timeout",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-response-timeout",
+              "sensitive" : false
+            },
+            "put-es-id-attr" : {
+              "displayName" : "Identifier Attribute",
+              "identifiesControllerService" : false,
+              "name" : "put-es-id-attr",
+              "sensitive" : false
+            },
+            "put-es-type" : {
+              "displayName" : "Type",
+              "identifiesControllerService" : false,
+              "name" : "put-es-type",
+              "sensitive" : false
+            },
+            "put-es-index" : {
+              "displayName" : "Index",
+              "identifiesControllerService" : false,
+              "name" : "put-es-index",
+              "sensitive" : false
+            },
+            "proxy-configuration-service" : {
+              "displayName" : "Proxy Configuration Service",
+              "identifiesControllerService" : true,
+              "name" : "proxy-configuration-service",
+              "sensitive" : false
+            },
+            "elasticsearch-http-url" : {
+              "displayName" : "Elasticsearch URL",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-url",
+              "sensitive" : false
+            },
+            "put-es-batch-size" : {
+              "displayName" : "Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "put-es-batch-size",
+              "sensitive" : false
+            },
+            "SSL Context Service" : {
+              "displayName" : "SSL Context Service",
+              "identifiesControllerService" : true,
+              "name" : "SSL Context Service",
+              "sensitive" : false
+            },
+            "elasticsearch-http-connect-timeout" : {
+              "displayName" : "Connection Timeout",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-connect-timeout",
+              "sensitive" : false
+            },
+            "Username" : {
+              "displayName" : "Username",
+              "identifiesControllerService" : false,
+              "name" : "Username",
+              "sensitive" : false
+            },
+            "put-es-index-op" : {
+              "displayName" : "Index Operation",
+              "identifiesControllerService" : false,
+              "name" : "put-es-index-op",
+              "sensitive" : false
+            },
+            "elasticsearch-http-proxy-host" : {
+              "displayName" : "Proxy Host",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-proxy-host",
+              "sensitive" : false
+            },
+            "proxy-username" : {
+              "displayName" : "Proxy Username",
+              "identifiesControllerService" : false,
+              "name" : "proxy-username",
+              "sensitive" : false
+            },
+            "proxy-password" : {
+              "displayName" : "Proxy Password",
+              "identifiesControllerService" : false,
+              "name" : "proxy-password",
+              "sensitive" : true
+            },
+            "elasticsearch-http-proxy-port" : {
+              "displayName" : "Proxy Port",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-proxy-port",
+              "sensitive" : false
+            },
+            "Character Set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "Character Set",
+              "sensitive" : false
+            },
+            "Password" : {
+              "displayName" : "Password",
+              "identifiesControllerService" : false,
+              "name" : "Password",
+              "sensitive" : true
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.elasticsearch.PutElasticsearchHttp",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ "failure", "unmatched" ],
