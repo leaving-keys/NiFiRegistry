@@ -10,6 +10,10 @@ flows:
     comments: '', author: anonymous, created: 1706296402693, flowName: Read and Split
       JSON, flowDesc: 'Reads a *.json file, splits the records in that *.json file,
       then writes each record into its own *.json file.'}
+  7257d3a5-a433-4b9a-b489-05333d083402: {ver: 1, file: Query_DB_then_Index_Elasticsearch.snapshot,
+    comments: '', author: anonymous, created: 1706296518954, flowName: Query DB then
+      Index Elasticsearch, flowDesc: 'A data pipeline that queries a database for
+      users, then writes those records into Elasticsearch.'}
   7383db45-4a3f-4eae-bd99-e894425a0bb8: {ver: 1, file: Read_CSV_and_Filter_Over_40s.snapshot,
     comments: '', author: anonymous, created: 1706296147796, flowName: Read CSV and
       Filter Over 40s, flowDesc: 'A data pipeline that reads a *.csv file containing
