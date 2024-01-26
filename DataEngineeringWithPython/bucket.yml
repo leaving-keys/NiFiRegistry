@@ -6,6 +6,10 @@ flows:
       2nd data warehouse., author: anonymous, created: 1706292929834, flowName: SeeClickFix,
     flowDesc: 'Query the SeeClickFix API for current and historic issues, then add
       those issues into Elasticsearch.'}
+  35ab678c-008a-4e95-9502-1f2b5649a8db: {ver: 1, file: Read_and_Split_JSON.snapshot,
+    comments: '', author: anonymous, created: 1706296402693, flowName: Read and Split
+      JSON, flowDesc: 'Reads a *.json file, splits the records in that *.json file,
+      then writes each record into its own *.json file.'}
   7383db45-4a3f-4eae-bd99-e894425a0bb8: {ver: 1, file: Read_CSV_and_Filter_Over_40s.snapshot,
     comments: '', author: anonymous, created: 1706296147796, flowName: Read CSV and
       Filter Over 40s, flowDesc: 'A data pipeline that reads a *.csv file containing
