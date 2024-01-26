@@ -1,4 +1,7 @@
 flows:
+  4569dd72-b47a-4481-bfea-5fb88c8293a2: {ver: 1, file: Generate_and_Put_File.snapshot,
+    comments: '', author: anonymous, created: 1706295918538, flowName: Generate and
+      Put File, flowDesc: A simple pipeline that generates and writes a text file.}
   6480618f-a24a-45ff-b7f3-251a9dbe5b69: {ver: 2, file: SeeClickFix.snapshot, comments: Added
       2nd data warehouse., author: anonymous, created: 1706292929834, flowName: SeeClickFix,
     flowDesc: 'Query the SeeClickFix API for current and historic issues, then add
