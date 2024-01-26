@@ -1,0 +1,7 @@
+flows:
+  a0f4fe77-23fe-45fc-a228-ee55c513012e: {ver: 3, file: SeeClickFix.snapshot, comments: Added
+      3rd data warehouse., author: anonymous, created: 1706286518293, flowName: SeeClickFix,
+    flowDesc: 'Query the SeeClickFix API for current and historic issues, then enter
+      those issues into Elasticsearch.'}
+layoutVer: 1
+bucketId: 92ee7fbc-7446-4427-a5ef-c12e34db8fb8
