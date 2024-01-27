@@ -352,6 +352,39 @@
           "destination" : {
             "comments" : "",
             "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+            "id" : "92ad7822-185f-31dc-9139-b182669d8564",
+            "instanceIdentifier" : "4b0f01fd-018d-1000-d246-f3e251b2a168",
+            "name" : "New Data Warehouse #2",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+          "identifier" : "c1db930f-fcd6-326a-9e8b-c3606b525c1f",
+          "instanceIdentifier" : "4b0f71ee-018d-1000-c48d-b6f09a443a3b",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "matched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+            "id" : "457239f8-4379-3cb2-9164-878d2bddff31",
+            "instanceIdentifier" : "8d2846c7-2854-333a-e675-018f58d48b39",
+            "name" : "EvaluateJsonPath",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
             "id" : "33486bde-0b21-353b-b9fd-8632906d8831",
             "instanceIdentifier" : "60d3262b-28d6-3aac-b5a3-74c2a961c942",
             "name" : "Query SeeClickFix Archive",
@@ -386,14 +419,14 @@
             "comments" : "",
             "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
             "id" : "c42adba6-fa03-3cd2-a5f0-b427a9b28ee9",
-            "instanceIdentifier" : "46fb61f8-018d-1000-a476-0f0f220cf6e1",
-            "name" : "New Data Warehouse",
+            "instanceIdentifier" : "d90f7ac7-8601-3b81-61ba-9fa5187f5329",
+            "name" : "New Data Warehouse #2",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
           "identifier" : "3077a2ed-3b52-3570-8ead-1d3b1a9587c9",
-          "instanceIdentifier" : "46fb793d-018d-1000-3cc5-2886b4ecfe32",
+          "instanceIdentifier" : "cd60b506-f5e7-3916-32fb-fc36069d6131",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -703,6 +736,152 @@
           "type" : "org.apache.nifi.processors.standard.GenerateFlowFile",
           "yieldDuration" : "1 sec"
         }, {
+          "autoTerminatedRelationships" : [ "success", "failure", "retry" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-elasticsearch-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.22.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+          "identifier" : "92ad7822-185f-31dc-9139-b182669d8564",
+          "instanceIdentifier" : "4b0f01fd-018d-1000-d246-f3e251b2a168",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "New Data Warehouse #2",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 3344.0,
+            "y" : 576.0
+          },
+          "properties" : {
+            "elasticsearch-http-response-timeout" : "15 secs",
+            "put-es-id-attr" : "id",
+            "put-es-index" : "seeclickfix",
+            "elasticsearch-http-url" : "http://localhost:9200",
+            "put-es-batch-size" : "100",
+            "elasticsearch-http-connect-timeout" : "5 secs",
+            "put-es-index-op" : "upsert",
+            "Character Set" : "UTF-8"
+          },
+          "propertyDescriptors" : {
+            "elasticsearch-http-response-timeout" : {
+              "displayName" : "Response Timeout",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-response-timeout",
+              "sensitive" : false
+            },
+            "put-es-id-attr" : {
+              "displayName" : "Identifier Attribute",
+              "identifiesControllerService" : false,
+              "name" : "put-es-id-attr",
+              "sensitive" : false
+            },
+            "put-es-type" : {
+              "displayName" : "Type",
+              "identifiesControllerService" : false,
+              "name" : "put-es-type",
+              "sensitive" : false
+            },
+            "put-es-index" : {
+              "displayName" : "Index",
+              "identifiesControllerService" : false,
+              "name" : "put-es-index",
+              "sensitive" : false
+            },
+            "proxy-configuration-service" : {
+              "displayName" : "Proxy Configuration Service",
+              "identifiesControllerService" : true,
+              "name" : "proxy-configuration-service",
+              "sensitive" : false
+            },
+            "elasticsearch-http-url" : {
+              "displayName" : "Elasticsearch URL",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-url",
+              "sensitive" : false
+            },
+            "put-es-batch-size" : {
+              "displayName" : "Batch Size",
+              "identifiesControllerService" : false,
+              "name" : "put-es-batch-size",
+              "sensitive" : false
+            },
+            "SSL Context Service" : {
+              "displayName" : "SSL Context Service",
+              "identifiesControllerService" : true,
+              "name" : "SSL Context Service",
+              "sensitive" : false
+            },
+            "elasticsearch-http-connect-timeout" : {
+              "displayName" : "Connection Timeout",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-connect-timeout",
+              "sensitive" : false
+            },
+            "Username" : {
+              "displayName" : "Username",
+              "identifiesControllerService" : false,
+              "name" : "Username",
+              "sensitive" : false
+            },
+            "put-es-index-op" : {
+              "displayName" : "Index Operation",
+              "identifiesControllerService" : false,
+              "name" : "put-es-index-op",
+              "sensitive" : false
+            },
+            "elasticsearch-http-proxy-host" : {
+              "displayName" : "Proxy Host",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-proxy-host",
+              "sensitive" : false
+            },
+            "proxy-username" : {
+              "displayName" : "Proxy Username",
+              "identifiesControllerService" : false,
+              "name" : "proxy-username",
+              "sensitive" : false
+            },
+            "proxy-password" : {
+              "displayName" : "Proxy Password",
+              "identifiesControllerService" : false,
+              "name" : "proxy-password",
+              "sensitive" : true
+            },
+            "elasticsearch-http-proxy-port" : {
+              "displayName" : "Proxy Port",
+              "identifiesControllerService" : false,
+              "name" : "elasticsearch-http-proxy-port",
+              "sensitive" : false
+            },
+            "Character Set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "Character Set",
+              "sensitive" : false
+            },
+            "Password" : {
+              "displayName" : "Password",
+              "identifiesControllerService" : false,
+              "name" : "Password",
+              "sensitive" : true
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.elasticsearch.PutElasticsearchHttp",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ "failure" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -1003,9 +1182,9 @@
           "executionNode" : "ALL",
           "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
           "identifier" : "c42adba6-fa03-3cd2-a5f0-b427a9b28ee9",
-          "instanceIdentifier" : "46fb61f8-018d-1000-a476-0f0f220cf6e1",
+          "instanceIdentifier" : "d90f7ac7-8601-3b81-61ba-9fa5187f5329",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "New Data Warehouse",
+          "name" : "New Data Warehouse #2",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 3344.0,
@@ -1154,8 +1333,8 @@
           "name" : "EvaluateJsonPath",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 2743.653341949247,
-            "y" : 580.9047790346852
+            "x" : 2744.0,
+            "y" : 576.0
           },
           "properties" : {
             "Destination" : "flowfile-attribute",
