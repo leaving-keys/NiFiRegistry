@@ -49,6 +49,39 @@
           "destination" : {
             "comments" : "",
             "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+            "id" : "336a3ecb-9820-3809-8731-bc3e1eade19b",
+            "instanceIdentifier" : "5b0b10b0-018d-1000-3a91-5b544e2869ed",
+            "name" : "UpdateCounter",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+          "identifier" : "9b26f7fb-9249-33b8-8316-9690f3396560",
+          "instanceIdentifier" : "5b0b4c19-018d-1000-4fe3-715346b06a83",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+            "id" : "2a28a726-3273-3035-84ac-51e6257adb3b",
+            "instanceIdentifier" : "58916ece-35f0-3af8-d3a6-8123e17ca820",
+            "name" : "AddCoordinates",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
             "id" : "62689ddb-5d7b-3bc2-a4b6-f8b868404cae",
             "instanceIdentifier" : "5db30777-fb55-31cc-2c9c-d64a2f636bce",
             "name" : "SplitJson",
@@ -57,7 +90,7 @@
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
           "identifier" : "b8d05f95-a557-3eb2-a37f-ed54e1c95d40",
-          "instanceIdentifier" : "8a9b93c8-a370-35ec-ca9f-10741321c756",
+          "instanceIdentifier" : "cf9276e9-9806-317f-0b8e-7070d9bb7560",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -161,8 +194,8 @@
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-          "identifier" : "898a0987-d1a1-3928-8cdd-104431bb7a53",
-          "instanceIdentifier" : "a1efb61e-f196-337d-42da-5dec69bcaf15",
+          "identifier" : "f77cf25e-684f-3304-be7a-615450d52246",
+          "instanceIdentifier" : "5b0b67b1-018d-1000-1865-28d32a0ed9ba",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -173,9 +206,9 @@
           "source" : {
             "comments" : "",
             "groupId" : "407674a5-0863-35b5-8ada-4e1963d61a02",
-            "id" : "2a28a726-3273-3035-84ac-51e6257adb3b",
-            "instanceIdentifier" : "58916ece-35f0-3af8-d3a6-8123e17ca820",
-            "name" : "AddCoordinates",
+            "id" : "336a3ecb-9820-3809-8731-bc3e1eade19b",
+            "instanceIdentifier" : "5b0b10b0-018d-1000-3a91-5b544e2869ed",
+            "name" : "UpdateCounter",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -463,6 +496,56 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.22.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "407674a5-0863-35b5-8ada-4e1963d61a02",
+          "identifier" : "336a3ecb-9820-3809-8731-bc3e1eade19b",
+          "instanceIdentifier" : "5b0b10b0-018d-1000-3a91-5b544e2869ed",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "UpdateCounter",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 2744.0,
+            "y" : 576.0
+          },
+          "properties" : {
+            "counter-name" : "SeeClickFix issues",
+            "delta" : "1"
+          },
+          "propertyDescriptors" : {
+            "counter-name" : {
+              "displayName" : "Counter Name",
+              "identifiesControllerService" : false,
+              "name" : "counter-name",
+              "sensitive" : false
+            },
+            "delta" : {
+              "displayName" : "Delta",
+              "identifiesControllerService" : false,
+              "name" : "delta",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.UpdateCounter",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ "original", "failure" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -756,7 +839,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 3344.0,
-            "y" : 576.0
+            "y" : 368.0
           },
           "properties" : {
             "elasticsearch-http-response-timeout" : "15 secs",
@@ -971,8 +1054,8 @@
           "name" : "Elasticsearch SeeClickFix Warehouse",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 2743.653341949247,
-            "y" : 380.90477903468525
+            "x" : 2744.0,
+            "y" : 168.0
           },
           "properties" : {
             "elasticsearch-http-response-timeout" : "15 secs",
@@ -1188,7 +1271,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 3344.0,
-            "y" : 384.0
+            "y" : 176.0
           },
           "properties" : {
             "elasticsearch-http-response-timeout" : "15 secs",
@@ -1334,7 +1417,7 @@
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 2744.0,
-            "y" : 576.0
+            "y" : 368.0
           },
           "properties" : {
             "Destination" : "flowfile-attribute",
