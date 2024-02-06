@@ -14,6 +14,10 @@ flows:
     comments: '', author: anonymous, created: 1706296518954, flowName: Query DB then
       Index Elasticsearch, flowDesc: 'A data pipeline that queries a database for
       users, then writes those records into Elasticsearch.'}
+  65e0c544-dbff-4e9d-bd2d-1578c665cd0b: {ver: 1, file: Generate_and_Write_Data_using_Process_Groups.snapshot,
+    comments: '', author: anonymous, created: 1707242263762, flowName: Generate and
+      Write Data using Process Groups, flowDesc: Generate and Write Data using Process
+      Groups}
   7383db45-4a3f-4eae-bd99-e894425a0bb8: {ver: 1, file: Read_CSV_and_Filter_Over_40s.snapshot,
     comments: '', author: anonymous, created: 1706296147796, flowName: Read CSV and
       Filter Over 40s, flowDesc: 'A data pipeline that reads a *.csv file containing
